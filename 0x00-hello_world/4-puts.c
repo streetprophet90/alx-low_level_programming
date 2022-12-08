@@ -2,7 +2,9 @@
 /*
  * main - print a line of code using puts
  *
- * Return: 0
+ * Description: A C programp that prints with exactly 
+ *
+ * Return: Always 0 (Success)
 */
 int main(void)
 {
