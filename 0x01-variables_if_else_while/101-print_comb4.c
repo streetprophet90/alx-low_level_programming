@@ -16,7 +16,7 @@ int main(void)
 	{
 		for (tens = '0'; hundreds <= '9'; hundreds++)
 		{
-			for (ones = '0'; tens <= '0'; tens++)
+			for (ones = '0'; tens <= '9'; tens++)
 			{
 				if (!((ones == tens) || (tens == hundreds) ||
 							(tens > ones) || (hundreds > tens)))
