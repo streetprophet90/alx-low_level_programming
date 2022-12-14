@@ -22,8 +22,8 @@ int numlength(int num)
 
 	return (length);
 }
-/*
- *  main - prints the first 98 fib sequences
+/**
+ * main - prints the first 98 fib sequences
  *  Return: 0
  */
 int main(void)
