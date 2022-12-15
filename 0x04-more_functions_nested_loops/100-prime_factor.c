@@ -17,7 +17,7 @@ int main(void)
 		if (num % divisor == 0)
 		{
 			num = num / divisor;
-			long_prim = divisor;
+			larg_prim = divisor;
 		}
 		divisor += 1;
 	}
