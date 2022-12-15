@@ -3,7 +3,7 @@
 /**
  * print_most_numbers - prints
  * owned by streetprophet90
- * REturn: void
+ * Return: void
  */
 
 void print_most_numbers(void)
