@@ -2,9 +2,8 @@
 
 /**
  * print_triangle - entry point
- * owned by streetprophet90
  * Description: Prints diagonals
- * @size: size of the triangle
+ * @size : integer type
  * Return: void
  */
 
@@ -15,7 +14,7 @@ void print_triangle(int size)
 
 	while (i <= size && size > 0)
 	{
-		ii = 0
+		ii = 0;
 		while (ii < size - i)
 		{
 			_putchar(' ');
