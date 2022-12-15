@@ -10,7 +10,7 @@ int main(void)
 {
 	long num = 612852475143;
 	long divisor = 2;
-	ling larg_prim = 0;
+	long larg_prim = 0;
 
 	while (num != 1)
 	{
