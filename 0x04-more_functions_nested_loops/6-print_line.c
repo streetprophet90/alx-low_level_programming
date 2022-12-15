@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * more_numbers - prints a line
+ * print_line - prints a line
  * @n: variable
  *
  * Return: 0
@@ -9,12 +9,11 @@
 
 void print_line(int n)
 {
-	int a = 0;
+	int i;
 
-	while (a < n && n > 0)
+	for (i = 0; i < n; i++)
 	{
 		_putchar('_');
-		a++;
 	}
 	_putchar('\n');
 }
