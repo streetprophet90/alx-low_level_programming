@@ -1,17 +1,19 @@
 #include "main.h"
 /**
- * _strlen - return the length of a string
- * Owned by StreetProphet90
- * @s: char to check
- * Description: this will return the length of a string
- * Return: 0 is success
+ * swap_int - swaps the value of int a and int b
+ * Owned by streetprophet90
+ * @a: first int
+ * @b: second int
+ * Return: 0
  */
 
-int _strlen(char *s)
+void swap_int(int *a, int *b)
 {
-	int a = 0;
+	int s;
 
-	for (; *s++;)
-		a++;
-	return (a);
+
+	s = *a;
+	*a = *b;
+	*b = s;
+
 }
