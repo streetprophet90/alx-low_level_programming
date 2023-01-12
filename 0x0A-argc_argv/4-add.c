@@ -1,41 +1,38 @@
-#include "main.h"
 #include <stdio.h>
-#include <string.h>
-#include <ctype.h>
+#include <stdlib.h>
 
 /**
- * main - adds positive numbers
- * @argc: number of arguments
- * @argv: array of arguments
- * Return: 1, otherwise 0 if number contains non digit symbols
+ * main - adds positive numbers.
+ * @argc: argument count
+ * @argv: arguments
+ *
+ * Return: 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int i, j, length, sum;
-	char *ptr;
+	int i, n, sum = 0;
+	char *flag;
 
 	if (argc < 2)
-	printf("0\n");
-
-	else
 	{
-		sum = 0;
-		for (i = 1, i < argc; i++)
-		{
-			ptr = argv[i];
-			length = strlen(ptr);
-
-			for (j = 0; j < length; j++)
-			{
-				if (isdigit(*(ptr + j)) == 0)
-				{
-					printf("Error\n");
-					return (1);
-				}
-			}
-			sum += atoi(argv[i]);
-		}
-		printf("%d\n", sum);
+		printf("0\n");
+		return (0);
 	}
+
+	for (i = 1; argv[i]; i++)
+	{
+		n = strtol(argv[i], &flag, 10);
+		if (*flag)
+		{
+			printf("Error\n");
+			return (1);
+		}
+		else
+		{
+			sum += n;
+		}
+	}
+	printf("%d\n", sum);
+
 	return (0);
 }
